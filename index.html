@@ -1,0 +1,33 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"> 
+                <h3>HOME</h3>
+                <h3>GUEST</h3>
+            </div>
+            <div class="content">
+                <div  id="home-el">0</div>
+                <div  id="guest-el">0</div>
+            </div>
+            <div class="btn-container">
+                <div class="button container-left">
+                      <button id="Add1" class="btn" onclick="addHome(1)">+1</button>
+                      <button id="Add2" class="btn" onclick="addHome(2)">+2</button>
+                      <button id="Add3" class="btn" onclick="addHome(3)">+3</button>
+                  </div>
+            <div class="button container-right">
+                      <button id="Add1" class="btn" onclick="Addguest(1)">+1</button>
+                      <button id="Add2" class="btn" onclick="Addguest(2)">+2</button>
+                      <button id="Add3" class="btn" onclick="Addguest(3)">+3</button>
+                  </div>
+            </div>
+            <button class="reset" onclick="reset()">Reset</button>
+            <div class="save"  onclick="save()">Save</div>
+            <p class="p" id="save-el" >Previous Enteries:    </p> 
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
